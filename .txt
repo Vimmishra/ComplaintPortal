@@ -1,0 +1,44 @@
+// when admin clicks on view complaint details show him all complints registered on that particular employee,
+// show complaints to admin priority wise like corruption and ghoose complaints on top.
+// show employee , number of complaints and types of complaints registered on him.
+// show officer complaints priority wise else created at :-1 wise
+// find complaint by id and push this complaint to similar type of city and department officer
+
+officer.find({complaint.city,complaint.department})
+
+
+officer.complaints.push (complaint._id)
+
+fetch it using .populate
+
+
+
+
+incenstive:
+//get all employees with >=4.5 stars at the end of the year 31st mar, and give them 10%incentive of thier monthly income
+//get all employees with >=4 < 4.5 stars at the end of the year 31st mar, and give them 5%incentive of their monthly income
+
+//get all employees below 2 stars and send them warning message .
+
+
+
+//user can track his complaint 
+//user connot complaint to same employee again .  make user to complaint after number verification .
+//officer also get ratings after complaint is resolved send sms or email to user and also send link to rate officer like /rate/officerId
+
+
+
+//push phone number of user to employee's schema so user cannot complaint him againg and again
+//after that in officer controller wheere resolved function is remove that phone number from employee schema after resolved complaint.
+
+
+//markComplaintas resolved updated in officerController
+
+add search
+if complaint is not marked as verified by admin for 2 days than automatically assign to officer
+
+
+
+track complaint main conditiona chat button
+
+gemini

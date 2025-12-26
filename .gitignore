@@ -1,0 +1,24 @@
+env
+server/.env
+client/.env
+
+# Node modules
+node_modules/
+client/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build folders
+build/
+dist/
+
+# Editor settings
+.vscode/
+.idea/
