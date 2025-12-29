@@ -24,7 +24,7 @@ import AdminNavbar from "./components/AdminNavbar";
 import ComplaintsAnalytics from "./components/ComplaintAnalytics";
 import UserDashboard from "./pages/UserDashboard";
 import QRComplaintScan from "./components/QRComplaintScan";
-import UserNavbar from "./components/userNavbar";
+import UserNavbar from "./components/UserNavbar";
 import ExcelUploader from "./components/BulkEmployeeUploader";
 import OfficerBulkUploader from "./components/BulkOfficerUploader";
 import EmployeeNavbar from "./components/EmployeeNavbar";

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/context/AuthContext";
 import { Search, User, Menu, X, ShieldCheck, LogOut, ChevronRight } from "lucide-react";
 
-const Navbar = () => {
+const UserNavbar = () => {
   const navigate = useNavigate();
   const { user, logout } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
@@ -187,4 +187,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default UserNavbar;
