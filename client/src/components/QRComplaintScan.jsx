@@ -18,9 +18,18 @@ const QRScannerWithOverlay = () => {
           return;
         }
 
-        // Use the first camera
-        selectedDeviceId = videoInputDevices[0].deviceId;
+        // 🔹 Try to find the back camera first
+        const backCamera = videoInputDevices.find((device) =>
+          device.label.toLowerCase().includes("back") ||
+          device.label.toLowerCase().includes("rear")
+        );
 
+        // 🔹 If not found, fallback to last camera in the list
+        selectedDeviceId = backCamera
+          ? backCamera.deviceId
+          : videoInputDevices[videoInputDevices.length - 1].deviceId;
+
+        // Start scanning from the selected device
         codeReader.decodeFromVideoDevice(
           selectedDeviceId,
           videoRef.current,
@@ -38,7 +47,8 @@ const QRScannerWithOverlay = () => {
       })
       .catch((err) => console.error(err));
 
-    return () => codeReader.reset(); // cleanup on unmount
+    // Cleanup on component unmount
+    return () => codeReader.reset();
   }, []);
 
   return (
