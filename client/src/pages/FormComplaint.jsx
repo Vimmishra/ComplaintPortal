@@ -124,7 +124,7 @@ const FormComplaint = () => {
                   </SelectContent>
                 </Select>
 
-                <Input name="department" placeholder="eg: PSPCL,TEHSIL" value={complaintData.department} onChange={handleChange} />
+                <Input name="department" placeholder="Department (eg: PSPCL,TEHSIL)" value={complaintData.department} onChange={handleChange} />
                 <Input name="city" placeholder="City" value={complaintData.city} onChange={handleChange} />
 
                 <Textarea
