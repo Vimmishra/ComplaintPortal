@@ -118,8 +118,8 @@ const FormComplaint = () => {
                   <SelectContent>
                     <SelectItem value="rude">Rude Behaviour</SelectItem>
                     <SelectItem value="bribe">Asking for bribe</SelectItem>
-                    <SelectItem value="listing">Did'nt listening</SelectItem>
-                    <SelectItem value="corruption">Corrupted</SelectItem>
+                    <SelectItem value="listing">Didn't listening</SelectItem>
+                    <SelectItem value="corruption">Corruption or Missuse of Authority</SelectItem>
                      <SelectItem value="absent">Absent on duty</SelectItem>
                   </SelectContent>
                 </Select>

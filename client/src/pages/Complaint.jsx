@@ -206,11 +206,11 @@ const ComplaintForm = () => {
                 className="w-full p-3 border rounded-lg bg-white focus:ring-2 focus:ring-blue-500 outline-none"
               >
                 <option value="" disabled>Select complaint type</option>
-                <option value="corruption">Corruption</option>
+                <option value="corruption">Corruption/Missuse of Authority</option>
                 <option value="rude">Rude Behaviour</option>
                 <option value="absent">Absent on Duty</option>
                  <option value="bribe">Asking for bribe</option>
-                  <option value="listing">Did'nt listening</option>
+                  <option value="listing">Didn't listening </option>
               </select>
             </div>
 
